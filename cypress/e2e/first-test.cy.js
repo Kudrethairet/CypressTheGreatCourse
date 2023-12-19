@@ -2,14 +2,14 @@ import HomePage from '../support/HomePage.cy'
 import CategoryPage from '../support/CategoryPage.cy'
 import BookSummaryPage from '../support/BookSummaryPage.cy'
 
-
+const homepage = new HomePage()
+        const categorypage = new CategoryPage()
+        const booksummarypage = new BookSummaryPage()
 
     
 describe('Verify The Great Course  Page', () =>{
     it('Verify books info, and Add to cart is disable when non of the options is selected, only when instant video is selected the Add To Cart will be enabled ', () => {
-        const homepage = new HomePage()
-        const categorypage = new CategoryPage()
-        const booksummarypage = new BookSummaryPage()
+        
         homepage.visitHomePage()
         homepage.getCategoryElem().click()
         homepage.seletCategory('Health, Fitness & Nutrition')

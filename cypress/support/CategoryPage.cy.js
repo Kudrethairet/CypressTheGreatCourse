@@ -15,6 +15,7 @@ class CategoryPage{
         cy.get(data.elements.bookCardElemParent).each(($element)=>{
             const bookName = $element.text()
             if(bookName.includes(expectedBookName)){
+                cy.wait(1000)
                 cy.wrap($element).click()
                 cy.log(bookName,' is selected')
             }
