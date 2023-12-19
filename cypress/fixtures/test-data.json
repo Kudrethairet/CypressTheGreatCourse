@@ -1,0 +1,17 @@
+{
+    "url": "https://www.thegreatcourses.com",
+    "elements":
+   
+    {
+           "getCategoryElem": ".Header-Menu.Header-Menu_type_menu",
+           "categoryElem": ".CategoryButton-Item.CategoryButton-Item_isMobileBrowse_undefined",
+           "catPageHeaderElem": "div[class=SearchPage-HeaderTitle]",
+           "bookCardElemParent": ".CourseTile-Card",
+           "bookNameElem": "div[class=ProductPage-Header-Title]",
+           "addToCardElem": ".btn-block.btn.btn-success.btn-lg",
+           "instantVideoElem": "div[class='custom-control custom-radio']"
+           
+    }
+
+   
+}
