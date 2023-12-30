@@ -26,7 +26,7 @@ class BookSummaryPage{
    verifyAddToCardButtonIsDisable(){
 
     cy.fixture('test-data.json').then((data)=>{
-
+    cy.wait(1000)
     cy.get(data.elements.addToCardElem).should('be.disabled')
 
     })
@@ -34,7 +34,7 @@ class BookSummaryPage{
    verifyAddToCardButtonIsEnabled(){
 
     cy.fixture('test-data.json').then((data)=>{
-
+    cy.wait(1000)
     cy.get(data.elements.addToCardElem).should('be.enabled')
 
     })
